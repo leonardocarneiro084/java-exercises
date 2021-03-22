@@ -1,19 +1,21 @@
 
-// 12. Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+// this is an extension of the previous exercise 12
+// Write a Java program that takes inputs from user to calculate and print the average of a set of numbers.
 // using arrays
 
 import java.util.Scanner;
 
-public class Exercise12 {
+public class Exercise12Array {
 
     public static void main(String[] args) {
 
+        // user inputs the total number of value in the set 
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert the number of elements: ");
         int[] meuArray = new int[sc.nextInt()];
-        System.out.println("Array created with " + meuArray.length + " positions.");
+        System.out.println("Array created with " + meuArray.length + " elements.");
 
-        // user enters numbers and stores in array
+        // user enters values and stores in array
         for (int i = 0; i < meuArray.length; i++) {
             sc = new Scanner(System.in);
             System.out.println("Enter number: ");
